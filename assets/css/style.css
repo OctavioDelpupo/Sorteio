@@ -35,16 +35,54 @@ body {
 header {
   width: 100%;
   height: 12vh;
-  font-size: 1.2rem;
+  font-size: 24px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  color: var(--text-coolor);
   background-color: var(--primary-color);
 }
-header .nav-header > div > a {
+
+header h1 {
   color: var(--text-coolor);
 }
+.nav-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-header ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.nav-header li {
+  margin-left: 30px;
+}
+
+.nav-header a {
+  color: var(--text-coolor);
+  text-decoration: none;
+  padding: 0 0 10px 0;
+  position: relative;
+}
+
+.nav-header a::after {
+  content: " ";
+  width: 0%;
+  height: 4px;
+  background-color: var(--btn-hover);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.nav-header a:hover::after {
+  width: 100%;
+}
+
 main {
   width: 100vw;
   height: 76vh;
@@ -54,6 +92,7 @@ main {
 }
 
 .card-sortear {
+  width: 545px;
   height: 60%;
   display: flex;
   flex-direction: column;
@@ -63,25 +102,23 @@ main {
   background-color: var(--primary-color);
 }
 
-.container-card {
-  width: 80%;
-}
-
 .texfield {
   width: 100%;
-  padding: 25px;
+  padding: 45px;
+  font-size: 25px;
+  font-weight: 700;
   text-align: center;
 }
 
 .texfield p {
-  font-size: 1.2rem;
   display: inline-block;
-  color: var(--text-collor);
+  color: white;
 }
 .texfield span {
   background-color: #fa6615;
   color: #111827;
   font-weight: bold;
+  margin-right: 10px;
   border-radius: 8px;
   padding: 4px;
 }
@@ -203,6 +240,12 @@ i {
   font-size: 18px;
   cursor: pointer;
 }
+
+#generate:hover {
+  background-color: var(--btn-hover);
+  transition: 0, 5s;
+}
+
 #result span {
   display: flex;
   justify-content: center;
