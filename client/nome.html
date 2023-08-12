@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../assets/css/style.css" />
-    <link rel="stylesheet" href="../assets/css/media-query.css">
+    <link rel="stylesheet" href="../assets/css/media-query.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -35,7 +35,7 @@
   </head>
 
   <body>
-   <header>
+    <header>
       <a href="../index.html"><h1>Sorteio</h1></a>
       <nav class="nav-header">
         <ul>
@@ -46,9 +46,23 @@
       </nav>
     </header>
     <main>
-      <div class="manutencao">
-        <h2>PAGINA EM MANUTENÇÃO</h2>
-        <img src="../assets/img/manutencao.png" alt="manutencao do site">       
+      <div class="card-sortear">
+        <div class="container-card">
+          <h2>Sortear Nome</h2>
+          <div class="input-nome">
+            <textarea
+              name="sortearNome"
+              id="sortearNome"
+              cols="50"
+              rows="10"
+            ></textarea>
+          </div>
+          <button id="generate">Sortear nome</button>
+        </div>
+        <div id="result">
+          <span>Nome</span>
+        </div>
+      </div>
     </main>
 
     <footer>
@@ -71,6 +85,6 @@
         </div>
       </nav>
     </footer>
-    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/nome.js"></script>
   </body>
 </html>
