@@ -1,0 +1,84 @@
+@media screen and (max-width: 768px) {
+    nav h1 {
+        padding: 9px;
+    }
+
+    .logo h1 a {
+        font-size: 3rem;
+    }
+
+    .nav-link {
+        font-size: 1.3rem;
+    }
+
+    .mobile-menu {
+        margin-top: 15px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .nav-list {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mobile-menu-icon i {
+        font-size: 35px;
+        cursor: pointer;
+    }
+
+    .open {
+        display: block;
+    }
+
+    main {
+        height: calc(100vh - 170px);
+    }
+
+    .card {
+        height: 250px;
+    }
+
+    .texfield {
+        font-size: 1rem;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .btn-box {
+        font-size: 1rem;
+    }
+
+    .card-sortear h2 {
+        font-size: 1.5rem;
+    }
+
+    .input-field label {
+        font-size: 1.5rem;
+    }
+
+    .input-field input {
+        font-size: 1.5rem;
+    }
+
+    #generate {
+        padding: 5px;
+        font-size: 1.5rem;
+    }
+
+    #result {
+        font-size: 1.8rem;
+    }
+
+    footer p {
+        font-size: 1.2rem;
+    }
+}

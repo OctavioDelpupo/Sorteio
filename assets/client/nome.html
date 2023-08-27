@@ -14,11 +14,11 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="./assets/img/favicon_io/site.webmanifest">
     <!-- //f -->
-    <title>Sorteio</title>
+    <title>Sorteio Nome</title>
 </head>
 
 <body>
-    <!-- Inicio header -->
+
     <header>
         <nav class="nav-bar">
             <div class="logo">
@@ -34,7 +34,6 @@
             </div>
             <div class="mobile-menu-icon">
                 <i class="fa-solid fa-bars " onclick="menuShow()" style="color: #fa6615;"></i>
-                <!-- <i class="fa-solid fa-xmark " onclick="menuShow()" style="color: #fa6615;"></i> -->
             </div>
         </nav>
         <div class="mobile-menu">
@@ -47,29 +46,25 @@
     </header>
     <main>
         <div class="card">
-            <div class="card-itens">
-                <div class="texfield">
-                    <p><span>123</span> Sortear de nome ou números</p>
+            <div class="card-sortear">
+                <h2>Sortear Nome</h2>
+                <div class="input-nome">
+                    <textarea name="sortearNome" id="sortearNome" cols="40" rows="6"></textarea>
                 </div>
-                <div class="btn-box">
-                    <a href="/assets/client/nome.html">Sortear nome</a>
-                </div>
-                <div class="btn-box">
-                    <a href="/assets/client/numero.html">Sortear número</a>
+                <button id="generate">Sortear nome</button>
+                <div id="result">
+                    <span>Nome</span>
                 </div>
             </div>
         </div>
-        </div>
     </main>
-    <!-- // Fim Header  -->
 
-    <!-- Inicio footer -->
     <footer>
         <p>Copyright © 2023 Octávio Delpupo.</p>
     </footer>
-    <!-- //fim footer -->
 
-    <script src="./assets/js/script.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/nome.js"></script>
 </body>
 
 </html>

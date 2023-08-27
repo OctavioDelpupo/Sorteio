@@ -14,7 +14,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="./assets/img/favicon_io/site.webmanifest">
     <!-- //f -->
-    <title>Sorteio</title>
+    <title>Sorteio Número</title>
 </head>
 
 <body>
@@ -47,21 +47,28 @@
     </header>
     <main>
         <div class="card">
-            <div class="card-itens">
-                <div class="texfield">
-                    <p><span>123</span> Sortear de nome ou números</p>
+            <div class="card-sortear">
+                <h2>Gerador de Número</h2>
+                <div class="input-group">
+                    <div class="input-field">
+                        <label for="min">Mín</label>
+                        <input id="min" type="number" name="min" />
+                    </div>
+                    <div class="input-field">
+                        <label for="max">Máx</label>
+                        <input id="max" type="number" name="max" />
+                    </div>
                 </div>
-                <div class="btn-box">
-                    <a href="/assets/client/nome.html">Sortear nome</a>
+                <button id="generate">Gerar</button>
+                <div id="result">
+                    <span>00</span>
                 </div>
-                <div class="btn-box">
-                    <a href="/assets/client/numero.html">Sortear número</a>
-                </div>
+
             </div>
-        </div>
-        </div>
     </main>
     <!-- // Fim Header  -->
+
+
 
     <!-- Inicio footer -->
     <footer>
@@ -69,7 +76,8 @@
     </footer>
     <!-- //fim footer -->
 
-    <script src="./assets/js/script.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/numero.js"></script>
 </body>
 
 </html>
